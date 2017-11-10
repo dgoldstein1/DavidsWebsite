@@ -1,13 +1,48 @@
-baseurl = "http://example.org"
+baseurl = "/"
 title = "David Goldstein"
 theme = "dimension"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 disableKinds=["RSS"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-  description = "DGoldstein01@gmail.com"
+  description = '
+
+  <style>
+  a {
+    border-bottom : 0px;
+  }
+  </style>
+
+    <a href="mailto:DGoldstein01@gmail.com">
+      <button>
+        <i class="fa fa-envelope"></i>      
+      </button>
+    </a>
+
+    <a href="https://github.com/dgoldstein1">
+      <button>
+        <i class="fa fa-github"></i>
+      </button>
+    </a>
+
+    <a href="https://www.linkedin.com/in/david-goldstein-1211388a">
+      <button>
+        <i class="fa fa-linkedin"></i>      
+      </button>
+    </a>    
+
+    <a href="/resume/David Goldstein Resume.pdf" download>
+      <button class="fa fa-download">
+        Resume
+      </button>
+    </a>
+
+
+
+  '
   logo = ""
   copyright = "David Goldstein 2017"
 
