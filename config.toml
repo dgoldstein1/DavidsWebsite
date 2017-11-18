@@ -28,7 +28,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       </button>
     </a>    
 
-    <a href="/resume/David Goldstein Resume.pdf" id="resume-main" download>
+    <a href="/documents/David Goldstein Resume.pdf" id="resume-main" download>
       <button class="fa fa-download">
         Resume
       </button>

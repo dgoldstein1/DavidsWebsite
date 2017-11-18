@@ -12,4 +12,4 @@ Beyond my work in Computer Science, Arabic, International Relations, or commitme
 
 {{< figure class="image main" src="/images/david_jolena_shenendoah.jpg" >}}
 
-Originally from Sharon, Massachusetts, and attened school in Saint Paul, Minnesota, I now live happily with my fiancé in Washington, D.C., who works at an NGO helping girls in rural Kenya. In my spare time I enjoy hiking in Shenandoah National Park, running around DC, biking along the Potomac, and on rainy days, playing piano by the window or curling up with a good book. 
+Originally from Sharon, Massachusetts, and attened Macalester College in Saint Paul, Minnesota, I now live happily with my fiancé in Washington, D.C., who works at an NGO helping girls in rural Kenya. In my spare time I enjoy hiking in Shenandoah National Park, running around DC, biking along the Potomac, and on rainy days, playing piano by the window or curling up with a good book. 
