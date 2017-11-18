@@ -105,6 +105,6 @@ I have also used professionally and am comfortable with the following tools and 
 
 Outside of coding I have written a few papers about various aspects of computer science during my coursework at Macalester College and the American University of Sharjah, UAE :
 
-- <a href="/documents/Parallel Processing Vector Multiplication Using OMP in C.pdf" id="resume-main" download>Parallel Processing Vector Multiplication Using OMP in C</a>
-- <a href="/documents/Digital Electronics Game.pdf" id="resume-main" download>Dave's 'Chase the Light' Arcade Game</a>
+- <a href="/documents/Parallel Processing Vector Multiplication Using OMP in C.pdf"download>Parallel Processing Vector Multiplication Using OMP in C</a>
+- <a href="/documents/Digital Electronics Game.pdf"" download>Dave's 'Chase the Light' Arcade Game</a>
 - <a href="https://github.com/dgoldstein1/Encrypted-Chat">Encrypted Chat Application Using Web-sockets</a>

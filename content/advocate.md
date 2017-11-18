@@ -22,3 +22,13 @@ In the Twin Cities, I've had the opportunity to put this mission into action by 
 </figure>
 
 Working at the US State Department in the <a href="https://www.state.gov/j/prm/"> Bureau of Population, Refugees, and Migration</a> in the Office for the Middle East and Northern Africa, I helped organize vital assistance for refugees in Iraq, Syria, Turkey, Palestine, and Egypt. I also helped lobbying and collaboration efforts with other government entities, such as the Department of Defense, Department of Homeland Security, the White House, and the House and Senate, to affirm the US's commitment to refugees and refugee assistance world-wide.
+
+<h3>Research</h3>
+
+Beyond the office I have worked on a large number of projects and research relating to my passion for International Studies and role as an advocate for Human Rights :
+
+/Users/davidgoldstein/dev/DavidsWebsite/public/documents/Lessons Learned from the Iraqi Special Tribunal- A Case for Syria.pdf
+
+- <a href="/documents/Lebanon Cholera Refugee.pdf" download>The Impact of Cholera on Syrian Refugee Areas in Lebanon</a>
+- <a href="/documents/US Iraq Anfal.pdf" download>Kurdistan, Iraq, and U.S. Intervention in Anfal</a>
+- <a href="/documents/Lessons Learned from the Iraqi Special Tribunal- A Case for Syria.pdf" download>Lessons Learned from the Iraqi Special Tribunal: A Case for Syria</a>
