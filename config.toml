@@ -10,36 +10,39 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params]
   description = '
 
-  <style>
-  a {
-    border-bottom : 0px;
-  }
-  </style>
-
-    <a href="mailto:DGoldstein01@gmail.com">
+    <a href="mailto:DGoldstein01@gmail.com" id="mail-main">
       <button>
         <i class="fa fa-envelope"></i>      
       </button>
     </a>
 
-    <a href="https://github.com/dgoldstein1">
+    <a href="https://github.com/dgoldstein1" id="github-main">
       <button>
         <i class="fa fa-github"></i>
       </button>
     </a>
 
-    <a href="https://www.linkedin.com/in/david-goldstein-1211388a">
+    <a href="https://www.linkedin.com/in/david-goldstein-1211388a" id="linkedin-main">
       <button>
         <i class="fa fa-linkedin"></i>      
       </button>
     </a>    
 
-    <a href="/resume/David Goldstein Resume.pdf" download>
+    <a href="/resume/David Goldstein Resume.pdf" id="resume-main" download>
       <button class="fa fa-download">
         Resume
       </button>
     </a>
 
+
+<script>
+  // remove underline for <a> elements on this page
+  document.getElementById("mail-main").style.border = "none"
+  document.getElementById("github-main").style.border = "none"
+  document.getElementById("linkedin-main").style.border = "none"
+  document.getElementById("resume-main").style.border = "none"
+
+</script
 
 
   '
