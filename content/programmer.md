@@ -1,5 +1,5 @@
 +++
-title = "Computer Scientist"
+title = "Computer Science"
 weight = 30
 draft = false
 +++
@@ -89,6 +89,16 @@ I believe in full stack development. Computers work best when the developer know
         </tfoot>
     </table>
 </div>
+
+<figure class="image main">
+    <img src="/images/l_systems_fractal.png">
+    <figcaption>
+        <i>
+            The sequence 'B-A-B, A+B+A' in L Systems using an axiom of 'A', from  a Java project I created on fractals. <a href="https://en.wikipedia.org/wiki/L-system">See L-Systems on Wikipedia</a> for more information
+        </i>    
+    </figcaption>
+</figure>
+
 
 I have also used professionally and am comfortable with the following tools and frameworks:
 
