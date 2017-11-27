@@ -117,4 +117,5 @@ Outside of coding I have written a few papers about various aspects of computer 
 
 - <a href="/documents/Parallel Processing Vector Multiplication Using OMP in C.pdf"download>Parallel Processing Vector Multiplication Using OMP in C</a>
 - <a href="/documents/Digital Electronics Game.pdf"" download>Dave's 'Chase the Light' Arcade Game</a>
+- <a href="/documents/David Goldstein Comp Sci Capstone Presentation.pptx">Implementation and Analysis of Sheephead, Presentation</a>
 - <a href="https://github.com/dgoldstein1/Encrypted-Chat">Encrypted Chat Application Using Web-sockets</a>
