@@ -37,12 +37,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 <script>
   // remove underline for <a> elements on this page
-  document.getElementById("mail-main").style.border = "none"
-  document.getElementById("github-main").style.border = "none"
-  document.getElementById("linkedin-main").style.border = "none"
-  document.getElementById("resume-main").style.border = "none"
+  document.getElementById("mail-main").style.border = "none";
+  document.getElementById("github-main").style.border = "none";
+  document.getElementById("linkedin-main").style.border = "none";
+  document.getElementById("resume-main").style.border = "none";
+
+  // send out requests
+  let proxy="http://cors-anywhere.herokuapp.com/"
+  let geoIpServer="http://freegeoip.net/json"
+  let metricsServer="https://salty-sierra-82911.herokuapp.com/visits"
+
+  // get IP information and send to analytics database
+  $.getJSON(proxy + geoIpServer, function(ip){
+    console.log("current ip", ip)
+    if (ip) {
+      $.post(proxy + metricsServer, JSON.stringify({"ipAddress": ip.ip, "location": JSON.stringify(ip)}), function(res) {
+        console.log("response from db",res)
+      })
+    }
+  });
 
 </script
+
 
 
   '

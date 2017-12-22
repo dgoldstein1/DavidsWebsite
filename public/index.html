@@ -56,12 +56,28 @@
 
 <script>
   // remove underline for <a> elements on this page
-  document.getElementById("mail-main").style.border = "none"
-  document.getElementById("github-main").style.border = "none"
-  document.getElementById("linkedin-main").style.border = "none"
-  document.getElementById("resume-main").style.border = "none"
+  document.getElementById("mail-main").style.border = "none";
+  document.getElementById("github-main").style.border = "none";
+  document.getElementById("linkedin-main").style.border = "none";
+  document.getElementById("resume-main").style.border = "none";
+
+  // send out requests
+  let proxy="http://cors-anywhere.herokuapp.com/"
+  let geoIpServer="http://freegeoip.net/json"
+  let metricsServer="https://salty-sierra-82911.herokuapp.com/visits"
+
+  // get IP information and send to analytics database
+  $.getJSON(proxy + geoIpServer, function(ip){
+    console.log("current ip", ip)
+    if (ip) {
+      $.post(proxy + metricsServer, JSON.stringify({"ipAddress": ip.ip, "location": JSON.stringify(ip)}), function(res) {
+        console.log("response from db",res)
+      })
+    }
+  });
 
 </script
+
 
 
   </p>
@@ -405,10 +421,7 @@ Building a campaign for the right to information and accountability</a> into Ara
 
 <p>Over the course of my four years in the Concert Choir I traveled throughout the Midwest and US singing in churches, colleges and universities, in peoples&rsquo; homes, and everywhere in between. Here is a selection our work sung during that time:</p>
 
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/185920995&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236709191&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236708973&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-<br>
+<p><br>
 <br>
 <h3>Piano and Drums</h3>
 
@@ -418,9 +431,9 @@ Building a campaign for the right to information and accountability</a> into Ara
     
     
 </figure>
+</p>
 
-
-Playing piano and drums has always held a special place in my heart as a means of self-expressions, comfort, and introspection. While always an avocation, I have played drums and piano with various groups.
+<p>Playing piano and drums has always held a special place in my heart as a means of self-expressions, comfort, and introspection. While always an avocation, I have played drums and piano with various groups.
 <br>
 <br>
 In high school, I played drums in a few local bands and learned about Afro-Cuban music at Berklee College of Music and the Rivers School Conservatory in Weston, MA.
@@ -428,12 +441,7 @@ In high school, I played drums in a few local bands and learned about Afro-Cuban
 <br>
 Throughout college I played informally with musicians, improvising in practice rooms. I currently play jazz piano in my apartment in DC and frequently write songs for my fiancé, Jolena. Here are a few selections of my work :
 <br>
-<br>
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80667445&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63453620&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-
-<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/32905140&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+<br></p>
 
 </article>
 
