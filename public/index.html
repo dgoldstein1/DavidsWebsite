@@ -64,14 +64,15 @@
   // send out requests
   let proxy="https://cors-anywhere.herokuapp.com/"
   let geoIpServer="http://freegeoip.net/json"
-  let metricsServer="https://salty-sierra-82911.herokuapp.com/visits"
+  let metricsServer="https://quiet-brushlands-26130.herokuapp.com/visits"
   let localinstance="http://localhost:5000/visits"
 
   // get IP information and send to analytics database
-  $.getJSON(proxy + geoIpServer, function(ip){
-    console.log("current ip", ip)
-    if (ip) {
-      $.post(metricsServer, JSON.stringify({"ipAddress": ip.ip, "location": JSON.stringify(ip)}), function(res) {
+  $.getJSON(proxy + geoIpServer, function(ipResponse){
+    console.log("current ipResponse", ipResponse)
+    if (ipResponse) {
+      // formulate request to metrics server      
+      $.post(metricsServer, JSON.stringify(ipResponse), function(res) {
         console.log("response from db",res)
       })
     }
