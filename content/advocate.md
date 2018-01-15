@@ -27,8 +27,6 @@ Working at the US State Department in the <a href="https://www.state.gov/j/prm/"
 
 Beyond the office I have worked on a large number of projects and research relating to my passion for International Studies and role as an advocate for Human Rights :
 
-/Users/davidgoldstein/dev/DavidsWebsite/public/documents/Lessons Learned from the Iraqi Special Tribunal- A Case for Syria.pdf
-
 - <a href="/documents/Lebanon Cholera Refugee.pdf" download>The Impact of Cholera on Syrian Refugee Areas in Lebanon</a>
 - <a href="/documents/US Iraq Anfal.pdf" download>Kurdistan, Iraq, and U.S. Intervention in Anfal</a>
 - <a href="/documents/Lessons Learned from the Iraqi Special Tribunal- A Case for Syria.pdf" download>Lessons Learned from the Iraqi Special Tribunal: A Case for Syria</a>
