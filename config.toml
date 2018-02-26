@@ -43,13 +43,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   document.getElementById("resume-main").style.border = "none";
 
   // send out requests
-  let proxy="https://cors-anywhere.herokuapp.com/"
-  let geoIpServer="http://freegeoip.net/json"
-  let metricsServer="https://quiet-brushlands-26130.herokuapp.com/visits"
-  let localinstance="http://localhost:5000/visits"
+  let geoIpServer="/testRedirect"
+  let metricsServer="/api/metrics"
+  // let localinstance="http://localhost:5000/visits"
 
   // get IP information and send to analytics database
-  $.getJSON(proxy + geoIpServer, function(ipResponse){
+  $.getJSON(geoIpServer, function(ipResponse){
     console.log("current ipResponse", ipResponse)
     if (ipResponse) {
       // formulate request to metrics server      
