@@ -1,2 +1,1 @@
-/api/metrics/* https://quiet-brushlands-26130.herokuapp.com/visits 200
-/testRedirect     https://freegeoip.net/json 200
+/api/geoIpServer/* https://freegeoip.net/json/ 200
