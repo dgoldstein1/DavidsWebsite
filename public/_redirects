@@ -1,1 +1,1 @@
-/api/geoIpServer/* http://api.ipstack.com/check?access_key=7eca814a6de384aab338e110c57fef37&format=1 200
+/api/geoIpServer/* http://ip-api.com/json 200
