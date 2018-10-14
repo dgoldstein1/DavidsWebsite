@@ -1,0 +1,7 @@
+[[redirects]]
+  from = "/api/geoIpServer/*"
+  to = "http://ip-api.com/json"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  # headers = {X-From = "Netlify"} # COMMENT: add this header to the search request
+  # signed = "API_SIGNATURE_TOKEN" # COMMENT: sign each request with the value of this env variable
