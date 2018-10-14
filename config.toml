@@ -42,9 +42,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     document.getElementById("resume-main").style.border = "none";
 
     // send out requests
-    let geoIpServer="/api/geoIpServer/"
+    let geoIpServer="/api/geoIpServer?access_token=7eca814a6de384aab338e110c57fef37"
     let metricsServer="/api/websiteAnalytics/"
     let localinstance="http://localhost:5000/visits"
+
+    console.log("making request!!")
 
     // get IP information and send to analytics database
     $.getJSON(geoIpServer, function(ipResponse){
