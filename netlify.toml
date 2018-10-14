@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/geoIpServer/*"
-  to = "http://ip-api.com/json"
+  to = "http://api.ipstack.com/check?access_key=7eca814a6de384aab338e110c57fef37&output=json"
   status = 200
   force = true # COMMENT: ensure that we always redirect
   # headers = {X-From = "Netlify"} # COMMENT: add this header to the search request
