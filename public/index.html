@@ -64,12 +64,12 @@
   // send out requests
   let proxy="https://cors-anywhere.herokuapp.com/"
   let geoIpServer="/api/geoIpServer/"
-  let metricsServer="https://quiet-brushlands-26130.herokuapp.com/visits"
+  let metricsServer="/api/websiteAnalytics/"
   let localinstance="http://localhost:5000/visits"
 
   // get IP information and send to analytics database
   $.getJSON(geoIpServer, function(ipResponse){
-    console.log("current ipResponse", ipResponse)
+    console.log("current ip Response", ipResponse)
     if (ipResponse && ipResponse.status) {
       // mappings from ip response => ip server data model
       let mappings = {
