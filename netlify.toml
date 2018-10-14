@@ -8,7 +8,7 @@
   # signed = "API_SIGNATURE_TOKEN" # COMMENT: sign each request with the value of this env variable
 
 [[redirects]]
-  from = "/api/websiteAnalytics/*"
+  from = "/api/websiteAnalytics"
   to = "https://quiet-brushlands-26130.herokuapp.com/visits"
   status = 200
   force = true # COMMENT: ensure that we always redirect
