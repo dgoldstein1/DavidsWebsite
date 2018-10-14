@@ -1,8 +1,9 @@
 [[redirects]]
   from = "/api/geoIpServer/*"
-  to = "http://api.ipstack.com/check?access_key=7eca814a6de384aab338e110c57fef37&output=json"
+  to = "http://api.ipstack.com/check"
   status = 200
   force = true # COMMENT: ensure that we always redirect
+  query={access_key = "7eca814a6de384aab338e110c57fef37", output="json"}
   # headers = {X-From = "Netlify"} # COMMENT: add this header to the search request
   # signed = "API_SIGNATURE_TOKEN" # COMMENT: sign each request with the value of this env variable
 
