@@ -50,6 +50,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     $.getJSON(geoIpServer, function(ipResponse){
       console.log("current ip Response", ipResponse)
       if (ipResponse) {
+        // add in href
+        ipResponse.href = window.location.search
         // formulate request to metrics server
         $.post(metricsServer, JSON.stringify(ipResponse), function(res) {
           console.log("response from db",res)

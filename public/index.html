@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-	<meta name="generator" content="Hugo 0.30.2" />
+	<meta name="generator" content="Hugo 0.52" />
 		<title>David Goldstein</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -61,33 +61,18 @@
     document.getElementById("resume-main").style.border = "none";
 
     // send out requests
-    let geoIpServer="/api/geoIpServer/"
-    let metricsServer="/api/websiteAnalytics/"
+    let geoIpServer="/api/geoIpServer?access_key=7eca814a6de384aab338e110c57fef37"
+    let metricsServer="/api/websiteAnalytics"
     let localinstance="http://localhost:5000/visits"
 
     // get IP information and send to analytics database
     $.getJSON(geoIpServer, function(ipResponse){
       console.log("current ip Response", ipResponse)
-      if (ipResponse && ipResponse.status) {
-        // mappings from ip response => ip server data model
-        let mappings = {
-          city : "city",
-          ip : "query",
-          country_code : "countryCode",
-          country_name : "countryName",
-          latitude : "lat",
-          longitude : "lon",
-          region_code : "region",
-          time_zone : "timezone",
-          zip_code : "zip"
-        }
-        // transorm response
-        let request = {}
-        for (let i in mappings) {
-          request[i] = ipResponse[mappings[i]]
-        }
+      if (ipResponse) {
+        // add in href
+        ipResponse.href = window.location.search
         // formulate request to metrics server
-        $.post(metricsServer, JSON.stringify(request), function(res) {
+        $.post(metricsServer, JSON.stringify(ipResponse), function(res) {
           console.log("response from db",res)
         })
       }
@@ -122,12 +107,8 @@
             
               <article id="about">
   <h1>About Me</h1>
-  
-<figure class="image main">
-    
-        <img src="/images/DavidHiking.jpg" />
-    
-    
+  <figure class="image main">
+    <img src="/images/DavidHiking.jpg"/> 
 </figure>
 
 
@@ -135,12 +116,8 @@
 
 <p>Beyond my work in Computer Science, Arabic, International Relations, or commitment to equal rights and public service, I am a problem solver. I seek to understand how the world works around me and and thrive in an environment where I use this understanding to solve the world&rsquo;s problems with newly energetic and cross-cutting solutions.</p>
 
-
 <figure class="image main">
-    
-        <img src="/images/david_jolena_shenendoah.jpg" />
-    
-    
+    <img src="/images/david_jolena_shenendoah.jpg"/> 
 </figure>
 
 
@@ -151,23 +128,15 @@
             
               <article id="advocate">
   <h1>Advocate</h1>
-  <p>
-<figure class="image main">
-    
-        <img src="/images/DavidCAAReceptionTalking.jpg" />
-    
-    
+  <p><figure class="image main">
+    <img src="/images/DavidCAAReceptionTalking.jpg"/> 
 </figure>
 
 Over the last century, the nature of international conflict has changed drastically, and with it, Humanitarian law and global assistance. More than <a href="http://www.unhcr.org/en-us/figures-at-a-glance.html">65 million people are forcibly displaced from their home</a> and the number is growing.
 As an advocate for international Human Rights I have made it a priority to assist and amplify the voices of refugees and asylum speakers in the US and abroad.</p>
 
-
 <figure class="image main">
-    
-        <img src="/images/USCIS.jpg" />
-    
-    
+    <img src="/images/USCIS.jpg"/> 
 </figure>
 
 
@@ -285,12 +254,8 @@ Building a campaign for the right to information and accountability</a> into Ara
             
               <article id="programmer">
   <h1>Computer Science</h1>
-  
-<figure class="image main">
-    
-        <img src="/images/js-minified.png" />
-    
-    
+  <figure class="image main">
+    <img src="/images/js-minified.png"/> 
 </figure>
 
 
@@ -419,12 +384,8 @@ Building a campaign for the right to information and accountability</a> into Ara
             
               <article id="musician">
   <h1>Musician</h1>
-  
-<figure class="image main">
-    
-        <img src="/images/choir2013.jpeg" />
-    
-    
+  <figure class="image main">
+    <img src="/images/choir2013.jpeg"/> 
 </figure>
 
 
@@ -443,12 +404,8 @@ Building a campaign for the right to information and accountability</a> into Ara
 <p><br>
 <br>
 <h3>Piano and Drums</h3>
-
 <figure class="image main">
-    
-        <img src="/images/music_background.jpg" />
-    
-    
+    <img src="/images/music_background.jpg"/> 
 </figure>
 </p>
 
