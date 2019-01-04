@@ -70,7 +70,7 @@
       console.log("current ip Response", ipResponse)
       if (ipResponse) {
         // add in href
-        ipResponse.href = window.location.search
+        ipResponse.href = window.location.search.substr(1)
         // formulate request to metrics server
         $.post(metricsServer, JSON.stringify(ipResponse), function(res) {
           console.log("response from db",res)
