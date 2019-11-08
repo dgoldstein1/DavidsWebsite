@@ -18,34 +18,73 @@ The project is built using the R library [blogdown](https://bookdown.org/yihui/b
 git clone https://github.com/dgoldstein1/DavidsWebsite.git
 ```
 
-Open up the directory in R Studio and run the following :
+Open up the an R and run the following:
 
 ```r
-# Install blogdown
-install.packages("blogdown")
-# install hugo
-blogdown::install_hugo()
-# serve the site
-blogdown::serve_site()
-```
+david@david-Oryx-Pro:~/dev/personal/DavidsWebsite$ R
 
-R studio should output that the site is successfully running : 
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
-```r
-Started building sites ...
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
 
-Built site for language en:
-0 draft content
-0 future content
-0 expired content
-5 regular pages created
-6 other pages created
-0 non-page files copied
-0 paginator pages created
-0 tags created
-0 categories created
-total in 10 ms
-Serving the directory {your curr dir}/DavidsWebsite at http://127.0.0.1:4321
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> version
+               _                           
+platform       x86_64-pc-linux-gnu         
+arch           x86_64                      
+os             linux-gnu                   
+system         x86_64, linux-gnu           
+status                                     
+major          3                           
+minor          4.4                         
+year           2018                        
+month          03                          
+day            15                          
+svn rev        74408                       
+language       R                           
+version.string R version 3.4.4 (2018-03-15)
+nickname       Someone to Lean On          
+> install.packages("blogdown")
+Installing package into ‘/home/david/R/x86_64-pc-linux-gnu-library/3.4’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘evaluate’, ‘knitr’, ‘rmarkdown’, ‘tinytex’, ‘bookdown’, ‘xfun’, ‘servr’
+
+trying URL 'https://cloud.r-project.org/src/contrib/evaluate_0.14.tar.gz'
+Content type 'application/x-gzip' length 24206 bytes (23 KB)
+==================================================
+downloaded 23 KB
+...
+> blogdown::install_hugo()
+...
+> blogdown::serve_site()
+
+                   | EN  
++------------------+----+
+  Pages            |  2  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     | 41  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 105 ms
+To stop the server, run servr::daemon_stop(1) or restart your R session
+Serving the directory /home/david/dev/personal/DavidsWebsite at http://127.0.0.1:4321
 ```
 
 Open up `http://127.0.0.1:4321` in your browser and you should be taken to the website.

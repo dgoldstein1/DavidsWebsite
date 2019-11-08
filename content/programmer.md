@@ -34,6 +34,11 @@ I believe in full stack development. Computers work best when the developer know
                 <td>Data ingestion and analysis, networking, machine learning, cryptography, font-end (gnome)</td>
             </tr>
             <tr>
+                <td>Go</td>
+                <td>Very Comfortable</td>
+                <td>Creating REST APIs, streaming / grpc connections, creating CLIs, webcrawlers </td>
+            </tr>
+            <tr>
                 <td>Java</td>
                 <td>Very Comfortable</td>
                 <td>Web sockets, cryptography, unit / integration testing (JUnit, JTest, Mockito), front-end (Swing) </td>
@@ -73,11 +78,6 @@ I believe in full stack development. Computers work best when the developer know
                 <td>Perl</td>
                 <td>Some Experience</td>
                 <td>Network and other scripting</td>
-            </tr>
-            <tr>
-                <td>Go</td>
-                <td>Some Experience</td>
-                <td>Creating REST endpoints, database configuration </td>
             </tr>
             <tr>
                 <td>Scala</td>

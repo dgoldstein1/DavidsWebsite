@@ -28,7 +28,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
       </button>
     </a>    
 
-    <a href="/documents/David Goldstein Resume.pdf" id="resume-main" download>
+    <a href="https://github.com/dgoldstein1/resume/raw/master/david_goldstein.pdf" id="resume-main" download>
       <button class="fa fa-download">
         Resume
       </button>
@@ -65,7 +65,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   '
   logo = ""
-  copyright = "David Goldstein 2017"
+  copyright = "David Goldstein 2019"
 
 [[params.social]]
   medium = "github"
